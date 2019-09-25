@@ -1,13 +1,75 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container{
+  background: rgb(247, 243, 243);
+  border: 0.5px solid  rgb(187, 143, 48);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+li a{
+  text-decoration: none;
+  color: rgb(187, 143, 48);
+}
+
+header{
+  color: rgb(187, 143, 48);
+}
+
+h1.studentName{
+  text-align: center;
+  border: 1px solid rgb(187, 143, 48);
+  margin: 0;
+}
+
+ul.contact{
+  list-style: none;
+  text-align: center;
+}
+
+ul.contact li{
+  display: inline-block;
+  justify-content: space-evenly;
+  padding: 8px;
+}
+
+ul.contact li:hover, ul.contact li:focus, li a:hover, li a:focus{
+  background: rgb(187, 143, 48);
+  color: rgb(247, 243, 243);
+}
+
+div.imgWrapper{
+  display: flex;
+  justify-content: center;
+}
+
+img.studentImage{
+  border-radius: 30px 30px 0px 0px;
+}
+
+main{
+  text-align: center;
+  margin: 0px;
+  padding-top: 16px;
+  /* border: 0.5px solid  rgb(58, 44, 247); */
+  /* display: flex; */
+}
+
+h3, p.datesOfEmp, h5.fieldOfStudy {
+  margin: 0;
+  padding: 8px;
+}
+
+.dutyHeader{
+  margin: 0;
+  padding: 0;
+}
+
+section.experience, section.education{
+  border: 0.5px solid  rgb(187, 143, 48);
+  padding: 16px;
+}
+
+/* Desktop View  */
+@media only screen and (min-width: 560px) {
+  main{
+      display: flex;
+      justify-content: center;
+  }
 }
